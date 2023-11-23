@@ -10,6 +10,7 @@ import materialReducer from './material/reducer';
 import saleReducer from './sale/reducer';
 import purchaseReducer from './purchase/reducer';
 import UserGetter from './user/getters';
+import CustomerGetter from './customer/getters';
 
 
 const persistConfig = {
@@ -40,6 +41,7 @@ const store = configureStore({
 });
 
 UserGetter.store = store as any;
+CustomerGetter.store = store as any;
 // CustomerGetter.store = store as any;
 
 export type RootState = ReturnType<typeof store.getState>;

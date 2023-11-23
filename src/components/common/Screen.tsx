@@ -53,8 +53,8 @@ export default function Screen(
   return (
     <View style={[props.style, {flex: 1}]}>
       {props.source && <Background source={props.source} />}
-      {isFocused && <StatusBar barStyle={'dark-content'} backgroundColor={Colors.blackO5} translucent={true} {...props.statusBar}></StatusBar>}
-      <View style={{flex: 1, flexDirection: 'column', backgroundColor: Colors.background, paddingTop: insets.top}}>
+      {isFocused && <StatusBar backgroundColor={Colors.mainColor} {...props.statusBar}></StatusBar>}
+      <View style={{flex: 1, flexDirection: 'column', backgroundColor: Colors.white, paddingTop: insets.top}}>
         {props.headerShown && <Header {...props} />}
         <KeyboardAvoidingView
           behavior={Platform.OS === 'ios' ? 'padding' : (null as any)}

@@ -9,9 +9,7 @@ import { sm, vw } from '../../contants/Sizes';
 import Colors from '../../contants/Colors';
 import LottieView from 'lottie-react-native';
 import { IMAGES, Lottie_Files } from '../../assets';
-import { useDataBase } from '../../store/database/hooks';
-import { databaseSliceActions } from '../../store/database/reducer';
-import { ITEMS } from '../../contants/InitialState';
+
 
 
 export default function SplashScreen() {
@@ -37,9 +35,9 @@ export default function SplashScreen() {
             <Text style={[styles['header-text']]}>{preparing}</Text>
           </View>
         )}
-        <View>
+        {/* <View>
           <LottieView source={Lottie_Files.phihanhgiacode} autoPlay loop style={{ width: 80 * vw, height: 80 * vw }} />
-        </View>
+        </View> */}
         <View style={[styles.footer]}>
           <Text style={[styles['footer-text']]}>Powered by Tien</Text>
         </View>

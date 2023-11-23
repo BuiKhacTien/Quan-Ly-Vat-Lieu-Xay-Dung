@@ -63,7 +63,7 @@ export default function SelectCustom({ color, colorText, bgColor, listItemSelect
 
 const styles = StyleSheet.create({
   selectedBox: {
-    paddingHorizontal: 10,
-    marginVertical: 5,
+    // paddingHorizontal: 10,
+    // marginVertical: 5,
   },
 });

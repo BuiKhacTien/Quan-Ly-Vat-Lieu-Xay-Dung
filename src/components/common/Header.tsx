@@ -43,7 +43,7 @@ export default function Header(props: THeaderProps) {
       <View style={[styles.container]}>
         <View style={{ flex: 1 }}>
         { props.iconLeft ? (
-              <TouchableOpacity onPress={props.onIconRightPress}>
+              <TouchableOpacity onPress={props.onIconLeftPress}>
                 <Icon
                   style={[styles.icon, props.iconStyle]}
                   name={props.iconLeft}
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: sm,
-    backgroundColor: Colors.status,
+    backgroundColor: Colors.mainColor,
     // borderBottomLeftRadius: 20,
     // borderBottomRightRadius: 20,
   },

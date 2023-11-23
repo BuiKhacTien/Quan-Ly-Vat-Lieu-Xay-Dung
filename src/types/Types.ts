@@ -4,6 +4,11 @@ type TType = {
 
 export default TType;
 
+export type TItemSelect = {
+  id: string;
+  name: string;
+}
+
 
 export type TMaterial = {
   id: number;
@@ -64,12 +69,9 @@ export type TPurchaseOrderItem = {
 export type TCustomer = {
   id: number;
   name: string;
-  email: string;
   phone: string;
   address: string;
-  age: string;
-  birthday: string;
-  money: number;
+  note: string;
 }
 
 export type TSupplier = {
@@ -79,6 +81,6 @@ export type TSupplier = {
   email: string;
   phone: string;
   address: string;
-  money: number;
+  note: string;
   // Các thông tin khác về nhà cung cấp
 }

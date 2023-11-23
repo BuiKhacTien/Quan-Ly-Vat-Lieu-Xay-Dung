@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from 'react'
 import { StyleProp, StyleSheet, ViewStyle } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
+import Colors from '../../contants/Colors';
 
 type TProps = PropsWithChildren<{
   style?: StyleProp<ViewStyle>;
@@ -11,7 +12,7 @@ function LinearGradientCustom(props: TProps) {
     <LinearGradient
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 0 }}
-      colors={['#ffffff', '#616161', '#3d3d3d', '#1a1a1a', '#000000', '#1a1a1a', '#3d3d3d', '#616161', '#ffffff']}
+      colors={[Colors.mainColor, Colors.green500, Colors.mainColor]}
       style={[props.style]}
     >
       {props.children}

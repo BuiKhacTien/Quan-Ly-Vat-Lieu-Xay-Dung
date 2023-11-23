@@ -16,6 +16,12 @@ const customerSlice = createSlice({
     set(state, action: PayloadAction<TData>) {
       return action.payload;
     },
+    // add(state, action: PayloadAction<{customer: TCustomer}>) {
+    //   return {
+    //     // ...state,
+    //     // customer: [...state.customer, action.payload],
+    //   }
+    // },
   },
   extraReducers(builder) {
     builder.addCase($reset.type, () => initialState);
